@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Surachana Chhetri — Computer Science and Engineering undergraduate at South Asian University.">
+  <title>Surachana Chhetri | CSE Student</title>
+  <style>
+    :root {
+      --navy: #142b43;
+      --blue: #245b78;
+      --teal: #2d8583;
+      --ink: #24313b;
+      --muted: #65737e;
+      --paper: #f4f7f9;
+      --white: #ffffff;
+      --line: #dce5e9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    .wrap { width: min(960px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 22px 0; }
+    .brand { color: var(--navy); font-weight: 750; letter-spacing: .04em; }
+    .hero {
+      margin: 30px auto 22px;
+      padding: clamp(30px, 7vw, 68px);
+      border-radius: 24px;
+      color: white;
+      background: linear-gradient(135deg, #142b43 0%, #245b78 65%, #2d8583 100%);
+      box-shadow: 0 18px 45px rgba(20, 43, 67, .14);
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .76rem;
+      font-weight: 700;
+      color: #c7e9e6;
+    }
+    h1 { margin: 12px 0 8px; font-size: clamp(2.3rem, 7vw, 4.3rem); line-height: 1.05; }
+    .subtitle { margin: 0; max-width: 650px; font-size: clamp(1rem, 2.5vw, 1.22rem); color: #e5f0f3; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 12px 19px; border-radius: 999px;
+      font-weight: 700; text-decoration: none; transition: transform .15s ease, opacity .15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: .94; }
+    .primary { background: white; color: var(--navy); }
+    .secondary { border: 1px solid rgba(255,255,255,.65); color: white; }
+    main { padding-bottom: 54px; }
+    .grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; }
+    .card {
+      background: var(--white); border: 1px solid var(--line); border-radius: 18px;
+      padding: 25px; box-shadow: 0 8px 24px rgba(20,43,67,.045);
+    }
+    h2 { margin: 0 0 13px; color: var(--navy); font-size: 1.12rem; }
+    p { margin: 0 0 10px; }
+    .muted { color: var(--muted); }
+    .taglist { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .tag {
+      padding: 6px 10px; border-radius: 999px; background: #edf5f5;
+      color: #245f60; font-size: .86rem; font-weight: 650;
+    }
+    .item + .item { margin-top: 16px; padding-top: 15px; border-top: 1px solid var(--line); }
+    .item strong { display: block; color: var(--navy); }
+    .item small { color: var(--muted); }
+    .contact a { color: var(--blue); text-decoration: none; overflow-wrap: anywhere; }
+    .contact a:hover { text-decoration: underline; }
+    footer { padding: 20px 0 35px; color: var(--muted); font-size: .85rem; text-align: center; }
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">SC / PORTFOLIO</div>
+  </header>
+
+  <section class="hero wrap">
+    <div class="eyebrow">Computer Science &amp; Engineering</div>
+    <h1>Surachana<br>Chhetri</h1>
+    <p class="subtitle">B.Tech CSE undergraduate at South Asian University, building skills in programming, web development and computational problem-solving.</p>
+    <div class="actions">
+      <a class="btn primary" href="Surachana_Chhetri_Resume_Final.pdf" target="_blank" rel="noopener">View / Download Resume ↗</a>
+      <a class="btn secondary" href="mailto:surachana110808@gmail.com">Contact Me</a>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <div class="grid">
+      <section class="card">
+        <h2>About</h2>
+        <p>I am a Computer Science and Engineering undergraduate interested in software development, front-end technologies and technical research. I am developing a foundation in C programming, HTML, CSS, computing fundamentals and linear algebra.</p>
+        <p class="muted">Alongside my academic interests, I have held student leadership roles as Head Girl and Interact Club Secretary, and participated in community-service initiatives.</p>
+      </section>
+
+      <section class="card">
+        <h2>Education</h2>
+        <div class="item">
+          <strong>South Asian University</strong>
+          <small>B.Tech, Computer Science &amp; Engineering · 2026–Present</small>
+        </div>
+        <div class="item">
+          <strong>Ramjas International School</strong>
+          <small>CBSE Senior Secondary · 2026 · 88.2%</small><br>
+          <small>CBSE Secondary · 2024 · 91.2%</small>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Technical Skills</h2>
+        <div class="taglist">
+          <span class="tag">C (Foundational)</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Code::Blocks</span>
+          <span class="tag">Command Line</span>
+          <span class="tag">Algorithms</span>
+          <span class="tag">Linear Algebra</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Projects &amp; Interests</h2>
+        <div class="item">
+          <strong>Personal Portfolio Website</strong>
+          <small>Multi-page front-end portfolio using HTML and CSS.</small>
+        </div>
+        <div class="item">
+          <strong>Machine Learning Lab Website Concept</strong>
+          <small>Academic website concept focused on clear structure and navigation.</small>
+        </div>
+        <div class="item">
+          <strong>C Programming Assignments</strong>
+          <small>Practice with algorithms, search techniques, loops, arrays and functions.</small>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Leadership &amp; Community</h2>
+        <div class="item">
+          <strong>Head Girl</strong>
+          <small>Ramjas International School</small>
+        </div>
+        <div class="item">
+          <strong>Secretary, Interact Club</strong>
+          <small>Supported awareness campaigns, fundraising, student activities and community-service initiatives.</small>
+        </div>
+      </section>
+
+      <section class="card contact">
+        <h2>Get in Touch</h2>
+        <p><strong>Email</strong><br><a href="mailto:surachana110808@gmail.com">surachana110808@gmail.com</a></p>
+        <p><strong>GitHub</strong><br><a href="https://github.com/SurachanaChhetri" target="_blank" rel="noopener">github.com/SurachanaChhetri</a></p>
+        <p><strong>Internship interests</strong><br><span class="muted">Software development, front-end/web development, programming and research assistance.</span></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="wrap">© 2026 Surachana Chhetri · Built with HTML &amp; CSS</footer>
+</body>
+</html>
